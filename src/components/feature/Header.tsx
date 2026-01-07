@@ -62,12 +62,7 @@ export default function Header() {
   const [isHidden, setIsHidden] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const ticketUrl =
-    // Vite preferred
-    (import.meta as any)?.env?.VITE_TICKET_URL ||
-    // fallback if you insist on NEXT_PUBLIC_* naming
-    (import.meta as any)?.env?.NEXT_PUBLIC_TICKET_URL ||
-    '';
+  const ticketUrl = 'https://buy.stripe.com/9B6cN53uW1wqbs2dCu4c800';
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -208,9 +203,9 @@ export default function Header() {
             <span className="text-xs font-semibold tracking-[0.18em] uppercase text-white/80">Instagram</span>
           </a>
           <a
-            href={ticketUrl || '#tickets'}
-            target={ticketUrl ? '_blank' : undefined}
-            rel={ticketUrl ? 'noreferrer' : undefined}
+            href={ticketUrl}
+            target="_blank"
+            rel="noreferrer"
             className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 hover:border-white/30 transition-colors"
             aria-label="Get your ticket"
           >
@@ -296,9 +291,9 @@ export default function Header() {
 
             <div className="mt-3 pt-3 border-t border-white/10">
               <a
-                href={ticketUrl || '#tickets'}
-                target={ticketUrl ? '_blank' : undefined}
-                rel={ticketUrl ? 'noreferrer' : undefined}
+                href={ticketUrl}
+                target="_blank"
+                rel="noreferrer"
                 className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl border border-white/15 bg-white/5 hover:bg-white/10 hover:border-white/30 transition-colors"
               >
                 <span className="text-xs font-semibold tracking-[0.18em] uppercase text-white/90">Get your ticket</span>
