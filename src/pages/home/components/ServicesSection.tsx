@@ -1,10 +1,7 @@
 import { type MouseEvent } from 'react';
 
 export default function ServicesSection() {
-  const ticketUrl =
-    (import.meta as any)?.env?.VITE_TICKET_URL ||
-    (import.meta as any)?.env?.NEXT_PUBLIC_TICKET_URL ||
-    '';
+  const ticketUrl = 'https://buy.stripe.com/9B6cN53uW1wqbs2dCu4c800';
 
   const handleSmoothLinkClick = (event: MouseEvent<HTMLAnchorElement>, targetId: string) => {
     event.preventDefault();
@@ -97,18 +94,11 @@ export default function ServicesSection() {
             </div>
 
             <a
-              href={ticketUrl || '#'}
-              target={ticketUrl ? '_blank' : undefined}
-              rel={ticketUrl ? 'noreferrer' : undefined}
-              className={`inline-flex items-center justify-center px-7 py-3 rounded-full border transition-colors ${
-                ticketUrl
-                  ? 'border-white/15 bg-white/5 hover:bg-white/10 hover:border-white/30'
-                  : 'border-white/10 bg-white/3 opacity-60 cursor-not-allowed'
-              }`}
+              href={ticketUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center px-7 py-3 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 hover:border-white/30 transition-colors"
               aria-label="Open Stripe ticket link"
-              onClick={(e) => {
-                if (!ticketUrl) e.preventDefault();
-              }}
             >
               <span className="text-xs font-semibold tracking-[0.22em] uppercase text-white/90">Get your ticket</span>
             </a>
