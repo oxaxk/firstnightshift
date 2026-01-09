@@ -19,9 +19,10 @@ export default function Datenschutz() {
             <h2 className="text-xl md:text-2xl font-semibold mb-3">1. Kurzüberblick</h2>
             <p className="leading-relaxed">
               Diese Website ist eine <strong>Informations- und Weiterleitungsplattform</strong> zur Veranstaltung
-              <strong> „First Nightshift – Opening Party“</strong>. Wir sind <strong>kein Veranstalter</strong> und
-              <strong> nehmen keine Zahlungen entgegen</strong>. Es gibt <strong>kein Tracking</strong> und
-              <strong> keine Analyse</strong>.
+              <strong> „First Nightshift – Opening Party“</strong>. Wir sind <strong>nicht der Veranstalter</strong>.
+              Der Ticketkauf erfolgt ausschließlich über einen externen Zahlungsdienstleister.
+              Über diese Website werden <strong>keine personenbezogenen Daten erhoben</strong>.
+              Es gibt <strong>kein Tracking</strong> und <strong>keine Analyse</strong>.
             </p>
 
             <h2 className="text-xl md:text-2xl font-semibold mb-3 mt-10">2. Hosting (Vercel) & Repository (GitHub)</h2>
@@ -39,24 +40,27 @@ export default function Datenschutz() {
               Marketing-Cookies ein.
             </p>
 
-            <h2 className="text-xl md:text-2xl font-semibold mb-3 mt-10">4. Ticketkauf über PayPal (externer Link)</h2>
+            <h2 className="text-xl md:text-2xl font-semibold mb-3 mt-10">4. Ticketkauf über Stripe (externer Link)</h2>
             <p className="leading-relaxed">
-              Beim Klick auf „Get your ticket“ werden Sie zu einem externen Zahlungslink von <strong>PayPal</strong>
-              weitergeleitet. Die Zahlungsabwicklung erfolgt ausschließlich über PayPal und direkt zugunsten des
-              <strong> STUCK e.V.</strong>.
+              Beim Klick auf „Get your ticket“ werden Sie zu einem externen Zahlungslink des Zahlungsdienstleisters
+              <strong> Stripe</strong> weitergeleitet.
             </p>
             <p className="leading-relaxed mt-3">
-              Wir erhalten <strong>keine Zahlungsdaten</strong> und <strong>keinen Zahlungseingang</strong>. Welche Daten
-              PayPal verarbeitet, entnehmen Sie bitte der Datenschutzerklärung von PayPal.
+              Im Rahmen des Ticketkaufs verarbeitet Stripe personenbezogene Daten (insbesondere Name und E-Mail-Adresse)
+              eigenverantwortlich. Diese Daten werden <strong>nicht über diese Website</strong> erhoben, gespeichert oder verarbeitet.
+            </p>
+            <p className="leading-relaxed mt-3">
+              Rechtsgrundlage der Verarbeitung ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung).
+              Weitere Informationen finden Sie in der Datenschutzerklärung von Stripe:
               <br />
-              <span className="opacity-80">https://www.paypal.com/privacy</span>
+              <span className="opacity-80">https://stripe.com/privacy</span>
             </p>
 
             <h2 className="text-xl md:text-2xl font-semibold mb-3 mt-10">5. Empfänger / Drittland</h2>
             <p className="leading-relaxed">
-              Im Rahmen der Zahlungsabwicklung über PayPal kann eine Verarbeitung personenbezogener Daten auch in
-              Staaten außerhalb der EU/des EWR erfolgen. Details finden Sie in den Datenschutzinformationen von
-              PayPal.
+              Stripe kann personenbezogene Daten auch in Staaten außerhalb der EU/des EWR verarbeiten.
+              Stripe gewährleistet ein angemessenes Datenschutzniveau durch geeignete Garantien
+              (z. B. Standardvertragsklauseln).
             </p>
 
             <h2 className="text-xl md:text-2xl font-semibold mb-3 mt-10">6. Kontakt</h2>
