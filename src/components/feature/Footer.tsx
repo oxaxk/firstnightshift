@@ -58,6 +58,9 @@ export default function Footer() {
               <Link to="/datenschutz" className="opacity-75 hover:opacity-100 transition-opacity">
                 Datenschutz
               </Link>
+              <Link to="/agb" className="opacity-75 hover:opacity-100 transition-opacity">
+                AGB
+              </Link>
               <a
                 href="https://instagram.com/firstnightshift"
                 target="_blank"
