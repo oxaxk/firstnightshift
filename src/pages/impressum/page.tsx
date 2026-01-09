@@ -21,15 +21,23 @@ export default function Impressum() {
               Diese Website ist eine <strong>Informations- und Weiterleitungsplattform</strong> zur Veranstaltung
               <strong> „First Nightshift – Opening Party“</strong>.
               <br />
-              Wir sind <strong>kein Veranstalter</strong> und <strong>nehmen keine Zahlungen entgegen</strong>.
+              Wir treten <strong>nicht als Veranstalter</strong> auf. Veranstalter der Veranstaltung ist
+              <strong> STUCK e.V.</strong>.
+              <br />
+              Diese Website dient ausschließlich der Information und Weiterleitung zum Ticketkauf.
               <br />
               Kontakt: <span className="opacity-80">firstnightshift@outlook.de</span>
             </p>
 
-            <h2 className="text-xl md:text-2xl font-semibold mb-3 mt-10">Ticketzahlungen</h2>
+            <h2 className="text-xl md:text-2xl font-semibold mb-3 mt-10">Ticketkauf</h2>
             <p className="leading-relaxed">
-              Ticketzahlungen erfolgen über einen externen Zahlungslink (PayPal) und direkt zugunsten des
-              <strong> STUCK e.V.</strong>. Wir verarbeiten keine Zahlungsdaten.
+              Der Ticketkauf erfolgt ausschließlich über einen externen Zahlungslink des Zahlungsdienstleisters
+              <strong> Stripe</strong>.
+              <br />
+              Die Zahlungsabwicklung sowie die Verarbeitung personenbezogener Daten (z. B. Name und E-Mail-Adresse)
+              erfolgen eigenverantwortlich durch Stripe.
+              <br />
+              Wir haben keinen Zugriff auf Zahlungs- oder Transaktionsdaten.
             </p>
 
             <h2 className="text-xl md:text-2xl font-semibold mb-3 mt-10">Haftung für Links</h2>
