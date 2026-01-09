@@ -8,6 +8,7 @@ import Datenschutz from '../pages/datenschutz/page';
 import Impressum from '../pages/impressum/page';
 import CookieSettingsPage from '../pages/cookie/page';
 import ChatWidget from '../components/feature/ChatWidget';
+import AGB from '../pages/agb/page';
 
 function ScrollToTop() {
   const location = useLocation();
@@ -54,6 +55,10 @@ const routes: RouteObject[] = [
       {
         path: 'impressum',
         element: <Impressum />,
+      },
+      {
+        path: 'agb',
+        element: <AGB />,
       },
       {
         path: '*',
