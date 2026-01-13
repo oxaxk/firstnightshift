@@ -62,8 +62,6 @@ export default function Header() {
   const [isHidden, setIsHidden] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const ticketUrl = 'https://buy.stripe.com/9B6cN53uW1wqbs2dCu4c800';
-
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
@@ -176,13 +174,6 @@ export default function Header() {
             Line-up
           </a>
           <a
-            href="/#tickets"
-            onClick={(e) => handleSmoothNavClick(e, '/#tickets')}
-            className="text-white/70 hover:text-white transition-colors"
-          >
-            Tickets
-          </a>
-          <a
             href="/#location"
             onClick={(e) => handleSmoothNavClick(e, '/#location')}
             className="text-white/70 hover:text-white transition-colors"
@@ -201,16 +192,6 @@ export default function Header() {
           >
             <Icon name="instagram" className="w-4 h-4 text-white/75" />
             <span className="text-xs font-semibold tracking-[0.18em] uppercase text-white/80">Instagram</span>
-          </a>
-          <a
-            href={ticketUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 hover:border-white/30 transition-colors"
-            aria-label="Get your ticket"
-          >
-            <span className="text-xs font-semibold tracking-[0.18em] uppercase text-white/90">Ticket</span>
-            <Icon name="arrowUpRight" className="w-4 h-4 text-white/75" />
           </a>
 
           <a
@@ -274,30 +255,11 @@ export default function Header() {
                 Line-up
               </a>
               <a
-                href="/#tickets"
-                className="block px-3 py-2 rounded-xl text-white/80 hover:text-white hover:bg-white/5 transition-colors"
-                onClick={(e) => handleSmoothNavClick(e, '/#tickets')}
-              >
-                Tickets
-              </a>
-              <a
                 href="/#location"
                 className="block px-3 py-2 rounded-xl text-white/80 hover:text-white hover:bg-white/5 transition-colors"
                 onClick={(e) => handleSmoothNavClick(e, '/#location')}
               >
                 Location
-              </a>
-            </div>
-
-            <div className="mt-3 pt-3 border-t border-white/10">
-              <a
-                href={ticketUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl border border-white/15 bg-white/5 hover:bg-white/10 hover:border-white/30 transition-colors"
-              >
-                <span className="text-xs font-semibold tracking-[0.18em] uppercase text-white/90">Get your ticket</span>
-                <Icon name="arrowUpRight" className="w-4 h-4 text-white/75" />
               </a>
             </div>
           </div>
