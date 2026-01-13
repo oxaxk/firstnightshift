@@ -1,8 +1,6 @@
 import { type MouseEvent } from 'react';
 
 export default function HeroSection() {
-  const ticketUrl = 'https://buy.stripe.com/9B6cN53uW1wqbs2dCu4c800';
-
   const handleSmoothLinkClick = (event: MouseEvent<HTMLAnchorElement>, targetId: string) => {
     event.preventDefault();
     if (typeof document === 'undefined') return;
@@ -78,18 +76,6 @@ export default function HeroSection() {
 
               <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3">
                 <a
-                  href={ticketUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 rounded-full border border-white/15 bg-white/5 hover:bg-white/10 hover:border-white/30 transition-colors"
-                  aria-label="Get your ticket"
-                >
-                  <span className="text-xs sm:text-[0.8rem] font-semibold tracking-[0.22em] uppercase text-white/90">
-                    Get your ticket
-                  </span>
-                </a>
-
-                <a
                   href="/#expect"
                   onClick={(e) => handleSmoothLinkClick(e, 'expect')}
                   className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 rounded-full border border-white/10 bg-transparent hover:bg-white/5 hover:border-white/20 transition-colors"
@@ -102,7 +88,7 @@ export default function HeroSection() {
               </div>
 
               <div className="mt-5 sm:mt-4 text-xs tracking-[0.16em] uppercase text-white/55">
-                Limited capacity · 18+
+                Student event · 18+
               </div>
             </div>
 
