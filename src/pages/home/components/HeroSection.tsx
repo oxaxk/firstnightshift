@@ -12,7 +12,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="hero" className="relative overflow-hidden pt-28 pb-12 sm:pt-32 sm:pb-16 md:pt-40 md:pb-20">
+    <section id="hero" className="relative overflow-hidden pt-36 pb-16 sm:pt-32 sm:pb-16 md:pt-40 md:pb-20">
       {/* Atmosphere */}
       <div className="pointer-events-none absolute inset-0" aria-hidden="true">
         <div
