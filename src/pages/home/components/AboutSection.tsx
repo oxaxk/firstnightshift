@@ -3,20 +3,20 @@ import React from 'react';
 export default function AboutSection() {
   const items = [
     {
-      title: 'Reggaeton & Latin bangers all night',
-      description: 'Fast, loud, and sing-along energy — zero filler.'
+      title: 'Reggaeton & global party music',
+      description: 'A selection of reggaeton, Latin and international party tracks throughout the night.'
     },
     {
       title: 'Afro / House warm-up',
-      description: 'Smooth groove early — then the tempo goes up.'
+      description: 'Groove-oriented warm-up sets before the energy increases later on.'
     },
     {
       title: 'International crowd',
-      description: 'Erasmus & Viadrina vibe — open, social, and mixed.'
+      description: 'A mixed audience of Erasmus students and Viadrina students.'
     },
     {
-      title: 'Glow / neon visuals at STUCK',
-      description: 'Dark room, warm lights, clean atmosphere. No kitsch.'
+      title: 'Light & visual concept at STUCK',
+      description: 'Dark room with subtle lighting and neon accents.'
     }
   ];
 
@@ -47,12 +47,12 @@ export default function AboutSection() {
                 A clean night. High energy.
               </h2>
               <p className="mt-4 text-sm sm:text-base text-white/70 leading-relaxed">
-                Simple concept: good music, international crowd, and a room that feels right.
+                The event focuses on music, atmosphere and a diverse student audience.
               </p>
             </div>
 
             <div className="text-xs tracking-[0.18em] uppercase text-white/55">
-              21:00 warm-up · peak after midnight
+              Doors 21:00 · music until late
             </div>
           </div>
 
